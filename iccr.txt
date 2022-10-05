@@ -1,0 +1,10 @@
+@inproceedings{jacky00,
+	author = "Jonathan Jacky",
+	title = "Formal Safety Analysis of the Control Program
+		for a Radiation Therapy Machine",
+	booktitle = "The Use of Computers in Radiation Therapy:
+		XIIIth International Conference",
+	year = 2000, 
+	pages = "68--70",
+	editor = "Wolfgang Schlegel and Thomas Bortfeld",
+	publisher = "Springer"}

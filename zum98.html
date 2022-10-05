@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>ZUM 98</title>
+</head>
+
+<body>
+<center>
+<h4>Analyzing a Real-Time Program with Z</h4>
+<p>
+Jonathan Jacky
+<p>
+June, 1998
+<p>
+<strong>Abstract</strong>
+</center>
+<p>
+Real-time behavior of a multi-tasking program running on a pre-emptive
+priority-based operating system is analyzed.  The operating system and
+a collection of application tasks are modelled in Z.  Real time is
+represented by an ordinary Z state variable.  The model is adapted to
+a particular application by defining a state machine for each
+task and associating execution times with each state.  The model is
+analyzed by exhaustive simulation with the SMV model checker.  The
+state transitions described by Z operation schemas are implemented in
+the SMV programming language.  Invariants, preconditions, and
+postconditions from the Z are translated to formulas in CTL, the SMV
+specification language.  The SMV program is verified by checking these
+formulas.  This detects coding errors in the SMV program and also
+reveals inconsistencies in the original Z where operation schemas are
+inconsistent with state invariants.  The errors were corrected.
+Additional CTL formulas describe temporal properties that cannot be
+expressed directly in Z.  The Z model is validated by checking an
+example SMV program with CTL formulas that confirm scheduling results
+from rate-monotonic analysis (RMA).  Another application that does not
+satisfy the assumptions of RMA is analyzed, establishing that
+high-priority tasks cannot indefinitely delay low-priority tasks and
+real-time deadlines can be met.
+
+<p>
+Download (19 pages): <a href="zum98-paper.pdf">PDF (246 kb)</a>
+</p>

@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>CNTS Implementation</title>
+</head>
+
+<body>
+<center>
+<h4>Clinical Neutron Therapy System<br>
+	 Implementation<br>
+	 TR 2001-03-01</h4>
+<p>
+Jonathan Jacky
+<p>
+March 2001
+<p>
+<strong>Abstract</strong>
+</center>
+
+<p>
+This report describes the detailed design and code of the control
+program for the isocentric treatment unit of the Clinical Neutron
+Therapy System (CNTS).  It is primarily intended for software
+developers.  It describes design features which should be preserved
+when the program is modified, and explains some unobvious
+implementation details.  The control program was developed from a
+detailed design expressed in the Z notation.  It is coded in C.  We
+used only the ANSI Standard C library and a few libraries needed to
+use the real-time operating system and the X window system (<tt>Xlib</tt>
+only, not Motif or any other toolkits).  The program text (C data and
+functions) is partitioned into modules that make it easy for us to
+produce different program versions that run in different environments.
+The executing program comprises several concurrent tasks, coordinated
+by appropriate communication and synchronization methods.  The
+behavior of the user interface is determined by a table.  The
+graphical user interface is separable; the program can also read text
+commands from a keyboard or script file (for test automation).  Most
+of the code was developed on a general-purpose workstation, simulating
+tasking in a single process while reading and writing simulated device
+controller commands and data from files.  Many of the program source
+code files are re-used (without changes) in utility programs that run
+on a workstation.
+</p>
+
+
+<p>
+Download (70 pages): <a href="impl.pdf">PDF (179 kb)</a>
+
+<!--
+<a href="ftp://ftp.radonc.washington.edu:/pub/cnts-reports/impl/">
+other formats</a>
+->

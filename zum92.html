@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>ZUM 92</title>
+</head>
+
+<body>
+<center>
+<h4>Formal Specification and Development of Control System Input/Output</h4>
+<p>
+Jonathan Jacky
+<p>
+May, 1992
+<p>
+<strong>Abstract</strong>
+</center>
+<p>
+This report presents a formal specification in the Z notation for computations
+that calculate control system state variables from input/output device register
+contents (and vice-versa).  The specification is motivated by a particular
+medical device but is quite generic and should be widely applicable.  The
+specification is parameterized so that an implementation can be adapted to
+different control systems by providing tables of configuration data, rather
+than changing executable code.   Specified behaviors include detection of 
+errors (where clients invoke operations with invalid parameters) and faults
+(where input/output devices report invalid data).   The specification is not
+merely descriptive, but is also used in the formal development (or
+``refinement'')  of a detailed design.   From an initial specification which
+naturally expresses the requirements, but is abstract and non-constructive, we
+derive a functionally equivalent specification (also in Z), which suggests a
+straightforward and efficient implementation in an imperative programming
+language.   Formal justification is provided for each step in the derivation.
+Conjectures are posed that formalize claims such as ``All inputs are handled
+properly.''   Proving the conjectures could check for errors in the derivation,
+and provide confidence that the formal specification expresses the intended
+requirements.
+
+<p>
+<a href="zum92-ms.pdf">
+Download</a>
+</p>

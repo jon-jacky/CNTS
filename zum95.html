@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>ZUM 95</title>
+</head>
+
+<body>
+<center>
+<h4>Formal Development of a Graphical User Interface for a Radiation
+Therapy Machine</h4>
+<p>
+Jonathan Jacky and Jonathan Unger
+<p>
+November, 1994
+<p>
+<strong>Abstract</strong>
+</center>
+<p>
+We wrote a formal specification in Z for the graphical user interface
+of a radiation therapy machine.  We implemented our specification in a
+Pascal dialect on a workstation that uses the X window system to
+manage the keyboard and display.  We initially model the user
+interface as a collection of separate Z operation schemas
+corresponding to sections in the informal prose requirements document.
+From these we derive a state machine model, represented as a state
+transition table whose entries are schema names from the Z
+specification.  Our state transition table format compactly represents
+nested states that are modelled in Z by schema inclusion.  We
+implement each table entry as a Pascal function or procedure.  We also
+implement a dispatcher that selects the proper state transition
+whenever any X event occurs; our dispatcher is the X event loop.  Our
+dispatcher is a table-driven interpreter that can handle any state
+transition system expressed in the format we defined.  We model the
+dispatcher in Z and formally derive some of its code.
+
+<p>
+<a href="zum95-ms.pdf">
+Download</a>
+</p>

@@ -1,0 +1,223 @@
+<html>
+<head>
+<title>Clinical Neutron Therapy System</title>
+</head>
+
+<body>
+
+
+<body>
+
+<h1>Clinical Neutron Therapy System</h1>
+
+<p>
+The <em>Clinical Neutron Therapy System</em> (CNTS) at
+the <a href="https://radiationoncology.uw.edu/research/cyclotron/">
+    <em>UW Medical Cyclotron Facility</em></a> (UWMCF) is a
+cyclotron-based radiation therapy machine.  It has been treating
+patients and making isotopes since 1984, and is maintained and
+upgraded by UWMC staff.  
+</p>
+
+<p> 
+In 1999 we replaced the therapy portion of
+the vendor's original control system with new hardware and our own
+software.
+</p>
+
+<p>
+In 2015 we replaced the therapy control system again, 
+this time using <a href="http://www.aps.anl.gov/epics/">EPICS</a>, the
+Experimental Physics and Industrial Control System.   
+</p>
+
+<p>
+This paper from the <a href="http://www.icalepcs2013.org/">ICALEPCS
+2013</a> conference describes the design of the 2015 system:
+</p>
+
+<ul>
+  <li> <a href="http://accelconf.web.cern.ch/AccelConf/ICALEPCS2013/papers/tucoca05.pdf">
+      EPICS-based control system for a radiation therapy machine</a>
+    (also <a href="http://accelconf.web.cern.ch/AccelConf/ICALEPCS2013/talks/tucoca05_talk.pdf">slides</a>)
+  </li>
+</ul>
+
+<p>
+This presentation (including abstract and slides) at the Fall 2016 EPICS 
+meeting discusses the 2015 system and its formal verification, including 
+several automated tools:
+<p>
+
+<ul>
+<li> <a href="https://conference.sns.gov/event/11/session/1/contribution/53#">
+Automatic Formal Verification for EPICS</a> </li>
+</ul>
+
+<p>
+This paper from the <a href="http://www.icalepcs2017.org/">ICALEPCS
+2017</a> conference also describes the 2015 system and its formal verification, including 
+several automated tools:
+</p>
+
+
+<ul>
+  <li> <a href="http://accelconf.web.cern.ch/AccelConf/icalepcs2017/papers/tudpl02.pdf">
+      Automatic formal verification for EPICS</a>
+    (also <a href="http://accelconf.web.cern.ch/AccelConf/icalepcs2017/talks/tudpl02_talk.pdf">slides</a>)
+  </li>
+</ul>
+
+<hr>
+
+<p>
+This section documents the 1999 control system and its development
+project.  The functionality and user interface (but not the internals)
+of the 2015 system are similar, so most of these are still pertinent.
+</p>
+
+<p> 
+This report provides an overview and summary of that project:
+</p>
+
+<ul>
+  <li> <a href="cnts-report.html">
+A control system for a radiation therapy machine</a> </li>
+</ul>
+
+<p>
+These reports describe that control system in detail.
+Its <em>Reference manual</em> now serves as the primary requirements
+document for the 2015 system, and much of the <em>Therapist's
+guide</em> remains accurate.
+</p>
+
+<ul>
+  <li> <a href="refman.html">Reference manual</a> </li>
+  <li> <a href="guide.html">Therapist's guide</a> </li>
+</ul>
+
+<p>
+The old <em>Operations manual</em> and <em>Implementation guide</em>
+depend on internals so they are now obsolete, but are retained here to
+demonstrate what kind of information is needed to support a
+maintainable system.
+</p>
+
+<ul>
+  <li> <a href="ops.html">Operations manual</a> </li>
+  <li> <a href="impl.html">Implementation</a> </li>
+</ul>
+
+<p>
+This brief conference paper describes how we used formal software
+development methods (the Z notation and the SMV model checker) in that
+project:
+</p>
+
+<ul>
+  <li><a href="iccr.html">Formal safety analysis</a></li>
+</ul>
+
+<p> 
+Here is a large portion of the formal specification itself.  Since it describes
+functionality but not internals, most of it applies to the 2015 system as well.
+</p>
+
+<ul>
+  <li><a href="../z/machine.html">Formal specification</a></li>
+</ul>
+
+<p>
+Here are some brief notes for a talk about the project.
+</p>
+
+<ul>
+  <li><a href="../app-fm/app-fm.html">Formal development for a radiation therapy machine</a></li>
+</ul>
+
+<hr>
+
+<p>
+This section provides documents from the years preceding the 1999 installation.
+</p>
+
+<p>
+These served as our specifications during development of that system.
+They have been largely superceded by the <em>Reference Manual</em>
+(above), which is organized differently and incorporates changes made
+during development and after the initial installation.
+</p>
+
+<ul>
+  <li> <a href="tr-90-12-01.html">TR 90-12-01</a>
+	CNTS control system specification, part 1
+  <li> <a href="tr-90-12-02.html">TR 90-12-02</a>
+	Technical description of CNTS
+  <li> <a href="tr-92-05-01.html">TR 92-05-01</a>
+	CNTS control system specification, part 2
+  <li> <a href="tr-95-08-03.html">TR 95-08-03</a>
+	CNTS control system specification, part 3
+</ul>
+
+<p>
+These early papers and reports record preliminary work leading to the
+1999 installation.
+</p>
+
+<ul>
+  <li> <a href="fm90.html">FM 90</a>
+	Formal specifications for a clinical cyclotron control system 
+  <li> <a href="tr-91-02-02.html">TR 91-02-02</a>
+	Using formal models to plan control system testing (Dose Monitor Controller)
+  <li> <a href="pac91.html">PAC 91</a>
+	Control system specification for a cyclotron 
+	and neutron therapy facility
+  <li> <a href="zum92.html">ZUM 92</a>
+	Formal specification and development of control system input/output
+  <li> <a href="tr-95-12-01.html">TR 95-12-01</a>
+	Formal specification of control software (Z notation)
+  <li> <a href="fme93.html">FME 93</a>
+	Specifying a safety-critical control system in Z 
+	(also published as TSE 95)
+  <li> <a href="zum95.html">ZUM 95</a>
+	Formal development of a graphical user interface 
+	for a radiation therapy machine
+  <li> <a href="aas97.html">AAS 97</a>
+	Modelling, checking and implementing a control program 
+	for a rad. therapy machine
+  <li> <a href="zum97.html">ZUM 97</a>
+	Experience with Z developing a control program 
+	for a radiation therapy machine
+  <li> <a href="zum98.html">ZUM 98</a>
+	Analyzing a real-time program with Z (and the SMV model checker)
+</ul>
+
+<p>
+Some examples suggested by this project appear in
+a <a href="../z-book/">textbook</a>.
+</p>
+
+<!-- broken link - but new CNTS web page coming soon!
+<p>
+More information about the
+<a href="http://www.radonc.washington.edu/clinic/cc_pages/mach_neut_facts.html">
+neutron therapy facility</a>, including some pictures.
+</p>
+-->
+
+<HR>
+
+<ADDRESS>
+<A HREF="http://staff.washington.edu/~jon/">Jonathan Jacky</A> /
+<A HREF="http://www.radonc.washington.edu/">Department of Radiation Oncology</A> 
+Box 356043<br>
+<a href="http://www.washington.edu/">University of Washington</a> /
+Seattle, Washington 98195-6043 / USA<BR>
+Tel (206) 598-4117 / Fax (206) 598-6218<BR>
+<p>
+E-mail: jon@u.washington.edu
+</ADDRESS>
+
+</body>
+</html>

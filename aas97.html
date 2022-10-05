@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>AAS 97</title>
+</head>
+
+<body>
+<center>
+<h4>Modelling, Checking and Implementing a Control Program<br>
+for a Radiation Therapy Machine</h4>
+<p>
+Jonathan Jacky and Michael Patrick
+<p>
+December, 1996
+<p>
+<strong>Abstract</strong>
+</center>
+</p>
+
+<p>
+We are developing a control program for a unique radiation therapy
+machine.  The program is safety-critical, executes several concurrent
+tasks, and must meet real-time deadlines.  We have produced about 250
+pages of informal specification and design description, about 1200
+lines of Z and about 6000 lines of code.  The Z description includes
+an abstract level that expresses overall safety requirements and a
+concrete level that serves as a detailed design, where Z paragraphs
+correspond to data structures, functions and procedures in the code.
+We express requirements in the abstract level that we would like to
+check in the concrete level; checking these properties automatically
+could reveal subtle errors in the detailed design.  We selected a
+small portion of our design (13 transitions, 227 lines of Z,
+corresponding to 331 lines of code) and performed a pencil-and-paper
+(non-automated) analyses that revealed several errors.  We translated
+this portion of our Z model to the SMV input language.  The
+translation requires considerable simplification, where
+Z predicates and numerical, structured variable values are encoded
+as small integers.  We repeated our analyses using the SMV model
+checker.  The automated analyses detected the known errors (we did not
+detect any additional errors in our corrected version).
+</p>
+
+<p>
+<a href="aas97-ms.pdf">
+Download</a>
+</p>
